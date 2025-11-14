@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Cintaku! ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun, adlin hakim!</h1>
+        <div class="message-box">
+            <p>Di hari yang istimewa ini, aku ingin kamu tahu betapa berharganya dirimu bagiku.</p>
+            
+            <p>Sejak kamu hadir, hidupku penuh dengan tawa, kehangatan, dan cinta yang tak terhingga. Kamu adalah *rumah* tempat hatiku ingin selalu kembali, dan *cahaya* yang menuntunku melewati setiap badai.</p>
+            
+            <p>Aku berjanji, akan selalu ada di sisimu, merayakan setiap keberhasilanmu dan memelukmu di saat kamu merasa lelah. Semoga usiamu yang baru ini membawa lebih banyak kebahagiaan, kesehatan, dan semua impianmu menjadi kenyataan.</p>
+
+            <p class="signature">Aku mencintaimu lebih dari kata-kata. Selamanya milikmu,</p>
+            <p class="sender">[Nama Panggilan Anda]</p>
+        </div>
+        <div class="heart"></div>
+    </div>
+</body>
+</html>
