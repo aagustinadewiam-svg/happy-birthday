@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Sayang</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: pink;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: hotpink;
+            font-size: 40px;
+            animation: pop 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        /* KARTU UCAPAN */
+        .card {
+            background: white;
+            width: 80%;
+            padding: 25px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 22px;
+        }
+
+        /* ANIMASI HATI TERBANG */
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 25px;
+            animation: fly 5s linear infinite;
+            color: red;
+        }
+        @keyframes fly {
+            0% { transform: translateY(0) rotate(0); opacity: 1; }
+            100% { transform: translateY(-800px) rotate(720deg); opacity: 0; }
+        }
+
+        /* GAMBAR KUCING */
+        .cat {
+            width: 250px;
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: hotpink;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        button:hover {
+            background: deeppink;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Happy Birthday Sayangku 🎉</h1>
+
+    <!-- GAMBAR KUCING PEGANG KUE -->
+    <img class="cat" src="https://i.imgur.com/O3JTz7R.png" alt="cat holding cake">
+
+    <div class="card">
+        <p>Haii pria kecilnya akuu 💗</p>
+        <p>Hari ini hari spesial buat kamu.</p>
+        <p>Aku cuma mau bilang makasih sudah hadir di hidup aku.</p>
+        <p>Aku sayang banget sama kamu. Bener bener sayang.</p>
+        <p>Semoga semua yang kamu impikan tercapai yaa.</p>
+        <p>Dan semoga kita terus bareng selamanya 💗</p>
+    </div>
+
+    <!-- TOMBOL PLAY MUSIK -->
+    <button onclick="playMusic()">Putar Lagu 🎵</button>
+
+    <!-- MUSIK -->
+    <audio id="song" src="https://www.dropbox.com/scl/fi/yb9d34fb3m1j9r0f8f1f4/hbd.mp3?raw=1"></audio>
+
+    <script>
+        /* Bikin hati terbang setiap 500ms */
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * window.innerWidth + "px";
+            heart.style.fontSize = (20 + Math.random() * 20) + "px";
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 500);
+
+        /* Musik Play */
+        function playMusic() {
+            document.getElementById("song").play();
+        }
+    </script>
+
+</body>
+</html>
